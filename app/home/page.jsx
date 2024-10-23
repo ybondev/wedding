@@ -16,16 +16,6 @@ const Home = () => {
       <div className="row gy-3 picture_model">
         <div className="col-md-4 picture">
           <Image
-            src={"/assets/IMG_1093.jpg"}
-            width={450}
-            height={450}
-            className="img-fluid"
-            alt=""
-            priority
-          />
-        </div>
-        <div className="col-md-4 picture">
-          <Image
             src={"/assets/IMG_3750.jpg"}
             width={450}
             height={450}
@@ -37,6 +27,16 @@ const Home = () => {
         <div className="col-md-4 picture">
           <Image
             src={"/assets/IMG_3753.jpg"}
+            width={450}
+            height={450}
+            className="img-fluid"
+            alt=""
+            priority
+          />
+        </div>
+        <div className="col-md-4 picture">
+          <Image
+            src={"/assets/IMG_3750.jpg"}
             width={450}
             height={450}
             className="img-fluid"
