@@ -9,7 +9,6 @@ const Nav = () => {
   const [theme, setTheme] = useState("light");
   const [activeLink, setActiveLink] = useState("");
   let menuRef = useRef();
-  let header = useRef();
 
   useEffect(() => {
     document.body.className = theme;
@@ -29,15 +28,9 @@ const Nav = () => {
       document.removeEventListener("mousedown", navbarHandler);
     };
   }, [theme]);
-
-  useEffect(() => {
-    document.addEventListener("scroll", function () {
-      header.current.classList.toggle("sticky", window.scrollY > 0);
-    });
-  }, []);
   return (
     <>
-      <div className="container-fluid navbar_fluid sticky-top" ref={header}>
+      <div className="container-fluid navbar_fluid">
         <div className="container">
           <nav className="navbar " ref={menuRef}>
             <ul className={open ? "active" : "inactive"}>
