@@ -197,6 +197,22 @@
   padding: 2rem 0;
 }
 
+/* ATTIRE */
+.attire_section {
+  padding: 2rem 0;
+}
+
+.attire_section .row .col-md-12 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.attire_section .img-fluid {
+  width: 100%;
+  max-width: 800px;
+}
+
 .location_section .row iframe {
   width: 100%;
 }

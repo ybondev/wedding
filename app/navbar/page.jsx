@@ -68,7 +68,7 @@ const Nav = () => {
               </li>
               <li>
                 <Link
-                  href={`#`}
+                  href={`/attire`}
                   className={
                     activeLink === "Attire" ? "active link_item" : "link_item"
                   }
