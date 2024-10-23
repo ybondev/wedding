@@ -12,7 +12,9 @@ const layout = ({ children }) => {
   return (
     <html lang="en">
       <body className="body">
-        <Header />
+        <div className="container">
+          <Header />
+        </div>
         {children}
       </body>
     </html>
