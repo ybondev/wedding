@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Nav from "../navbar/page";
+import Link from "next/link";
 
 const page = () => {
   return (
@@ -40,6 +41,15 @@ const page = () => {
                 alt=""
                 priority
               />
+            </div>
+            <div className="container_btn">
+              <Link
+                href={`/assets/wedding_invitation.pdf`}
+                download={true}
+                className="link_pdf"
+              >
+                Download soft copy here.
+              </Link>
             </div>
           </div>
         </div>

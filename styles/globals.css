@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Saira:wght@400;500;700&display=swap%27");
+@import url("https://fonts.googleapis.com/css2?family=Alice&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 *,
 *::before,
@@ -6,7 +6,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Saira", sans-serif;
+  font-family: "Alice", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 :root {
@@ -229,6 +231,12 @@
 
 .invitation_section .img-fluid:hover {
   transform: scale(1.1);
+}
+
+.link_pdf {
+  color: #e6b366;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 @media screen and (min-width: 768px) {

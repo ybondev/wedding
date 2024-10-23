@@ -88,16 +88,6 @@ const Nav = () => {
                   Wedding Invitation
                 </Link>
               </li>
-              <li>
-                <Link
-                  href={`#`}
-                  className={
-                    activeLink === "FAQs" ? "active link_item" : "link_item"
-                  }
-                >
-                  FAQs
-                </Link>
-              </li>
             </ul>
             <div className="hamburger_menu" onClick={() => setOpen(!open)}>
               {open ? (
