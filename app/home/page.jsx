@@ -16,7 +16,7 @@ const Home = () => {
       <div className="row gy-3 picture_model">
         <div className="col-md-4 picture">
           <Image
-            src={"/assets/IMG_3753.jpg"}
+            src={"./assets/IMG_3753.jpg"}
             width={450}
             height={450}
             className="img-fluid"
