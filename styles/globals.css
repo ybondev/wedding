@@ -15,10 +15,14 @@
 
 /* COMMON */
 section {
-  padding: 2rem 0;
+  /* padding: 2rem 0; */
 }
 
 /* NAVBAR */
+.container-fluid.navbar_fluid.sticky-top {
+  padding: 0;
+}
+
 .navbar_fluid {
   padding: 2rem 0;
   transition: all 0.3s;
@@ -107,17 +111,27 @@ section {
 }
 
 /* HEADER */
-.header_section {
+/* .header_section {
   padding-top: 2rem;
   padding-bottom: 0;
 }
 
-.header_section .container .row .banner {
+.header_section .container .row .img-fluid {
   width: 100%;
   max-width: 1321px;
+} */
+
+.banner {
+  width: 100%;
+  max-width: 1321px;
+  padding-top: 2rem;
 }
 
 /* HOME */
+.home_section {
+  padding-bottom: 2rem;
+}
+
 .home_section .text1 {
   text-align: center;
   font-size: 1.5rem;
@@ -130,15 +144,24 @@ section {
   margin: 1rem 0;
 }
 
-.home_section .container .picture {
+.home_section .container .picture1,
+.home_section .container .picture2,
+.home_section .container .picture3 {
   width: 100%;
   max-width: 400px;
   transition: all 0.3s;
   filter: drop-shadow(5px 5px #e6b366);
 }
 
-.home_section .container .picture:hover {
+.home_section .container .picture1:hover,
+.home_section .container .picture2:hover,
+.home_section .container .picture3:hover {
   transform: scale(1.1);
+}
+
+.home_section .container .picture1,
+.home_section .container .picture2 {
+  display: none;
 }
 
 .home_section .row3 {
@@ -173,8 +196,35 @@ section {
 }
 
 /* BRIDE & GROOM */
+.bride_groom_section {
+  padding: 2rem 0;
+}
+
 .bride_groom_section .img-fluid {
   width: 100%;
+}
+
+/* LOCATION */
+.location_section {
+  padding: 2rem 0;
+}
+
+.location_section .row iframe {
+  width: 100%;
+}
+
+/* INVITATION */
+.invitation_section {
+  padding: 2rem 0;
+}
+
+.invitation_section .img-fluid {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.invitation_section .img-fluid:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (min-width: 768px) {
@@ -224,6 +274,11 @@ section {
 
   .navbar .hamburger_menu {
     display: none;
+  }
+
+  .home_section .container .picture1,
+  .home_section .container .picture2 {
+    display: block;
   }
 }
 

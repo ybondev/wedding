@@ -65,7 +65,7 @@ const Nav = () => {
               </li>
               <li>
                 <Link
-                  href={`#`}
+                  href={`/location`}
                   className={
                     activeLink === "Location" ? "active link_item" : "link_item"
                   }
@@ -85,14 +85,14 @@ const Nav = () => {
               </li>
               <li>
                 <Link
-                  href={`#`}
+                  href={`invitation`}
                   className={
-                    activeLink === "Wedding Timeline"
+                    activeLink === "Wedding Invitation"
                       ? "active link_item"
                       : "link_item"
                   }
                 >
-                  Wedding Timeline
+                  Wedding Invitation
                 </Link>
               </li>
               <li>
@@ -103,18 +103,6 @@ const Nav = () => {
                   }
                 >
                   FAQs
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`#`}
-                  className={
-                    activeLink === "Accomodations"
-                      ? "active link_item"
-                      : "link_item"
-                  }
-                >
-                  Accomodations
                 </Link>
               </li>
             </ul>
@@ -128,20 +116,6 @@ const Nav = () => {
           </nav>
         </div>
       </div>
-      {/* <div className="container">
-        <div className="navigation">
-          <FaBars className="fa_icon" />
-          <ul>
-            <li>Home</li>
-            <li>Bride & Groom</li>
-            <li>Location</li>
-            <li>Attire</li>
-            <li>Wedding Timeline</li>
-            <li>FAQs</li>
-            <li>Accomodations</li>
-          </ul>
-        </div>
-      </div> */}
     </>
   );
 };
