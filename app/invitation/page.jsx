@@ -45,7 +45,7 @@ const page = () => {
             <div className="container_btn">
               <Link
                 href={`/assets/wedding_invitation.pdf`}
-                download={true}
+                download={`wedding_invitation.pdf`}
                 className="link_pdf"
               >
                 Download soft copy here.
