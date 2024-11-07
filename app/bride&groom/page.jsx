@@ -22,16 +22,6 @@ const BrideGroom = () => {
       <section className="bride_groom_section container-fluid">
         <div className="container">
           <div className="row gy-3">
-            {/* <div className="col-md-3">
-              <Image
-                src={"/assets/IMG_1093.jpg"}
-                width={300}
-                height={300}
-                className="img-fluid"
-                alt=""
-                priority
-              />
-            </div> */}
             {data.map((x) => {
               return (
                 <div className="col-md-4" key={x.id}>

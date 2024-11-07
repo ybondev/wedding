@@ -143,12 +143,6 @@
   filter: drop-shadow(5px 5px #e6b366);
 }
 
-.home_section .container .picture1:hover,
-.home_section .container .picture2:hover,
-.home_section .container .picture3:hover {
-  transform: scale(1.1);
-}
-
 .home_section .container .picture1,
 .home_section .container .picture2 {
   display: none;
@@ -192,6 +186,7 @@
 
 .bride_groom_section .img-fluid {
   width: 100%;
+  transition: all 0.3s ease-in-out;
 }
 
 /* LOCATION */
@@ -227,10 +222,6 @@
 .invitation_section .img-fluid {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-}
-
-.invitation_section .img-fluid:hover {
-  transform: scale(1.1);
 }
 
 .link_pdf {
@@ -295,6 +286,20 @@
   .home_section .container .picture1,
   .home_section .container .picture2 {
     display: block;
+  }
+
+  .home_section .container .picture1:hover,
+  .home_section .container .picture2:hover,
+  .home_section .container .picture3:hover {
+    transform: scale(1.1);
+  }
+
+  .invitation_section .img-fluid:hover {
+    transform: scale(1.1);
+  }
+
+  .bride_groom_section .img-fluid:hover {
+    transform: scale(1.1);
   }
 }
 
