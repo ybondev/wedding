@@ -47,6 +47,7 @@ const page = () => {
                 href={`/assets/wedding_invitation.pdf`}
                 download={`wedding_invitation.pdf`}
                 className="link_pdf"
+                target="_blank"
               >
                 Download soft copy here.
               </Link>
